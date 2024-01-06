@@ -15,6 +15,7 @@ html {
 body {
   --sb-track-color: #0600aabf;
   --sb-thumb-color: #02006b29;
+  --background-color: rgb(255, 255, 255);
   --sb-size: 0px;
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
@@ -34,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .layout {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url(./sources/background/26543270.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./sources/background/26543270.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,12 +85,17 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 5px;
+  }
+}
 .header .header-wrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  background-color: var(--background-color);
   border-radius: 10px;
   position: relative;
   right: -130%;
@@ -298,7 +304,7 @@ body::-webkit-scrollbar-thumb {
 }
 .header .header-wrapper .actions .button {
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   border: none;
   padding: 3px 6px;
   display: flex;
@@ -406,8 +412,8 @@ body::-webkit-scrollbar-thumb {
   animation: elementActive 1200ms ease-out 900ms 1 normal forwards;
   overflow-y: hidden;
   overflow-y: hidden;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 10px 20px;
+  background: var(--background-color);
   border-radius: 10px;
   position: relative;
   min-height: 300px;
@@ -540,7 +546,7 @@ body::-webkit-scrollbar-thumb {
 .main .main-wrapper.active .slide.active .container .text-wrapper .container-items .item {
   box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3568627451);
   padding: 10px 15px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4509803922);
   border-radius: 8px;
   position: relative;
 }
@@ -640,7 +646,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 850px) {
   .main .main-wrapper.active .slide.active .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   }
   .main .main-wrapper.active .slide.active .container .text-wrapper {
@@ -652,6 +658,20 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main {
+    padding: 0 5px 5px;
+  }
+  .main .main-wrapper.active .slide.active .title-bg {
+    margin: 5px;
+  }
+  .main .main-wrapper.active .slide.active .container {
+    gap: 10px;
+  }
+  .main .main-wrapper.active .slide.active .container .text-wrapper {
+    width: 100%;
   }
 }
 

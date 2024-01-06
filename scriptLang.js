@@ -1,6 +1,6 @@
 i18next.init(
   {
-    lng: "uk",
+    lng: "en",
     debug: false,
     resources: {
       en: {
@@ -254,4 +254,4 @@ function updateLanguageButtons(currentLng) {
   currentBtnLang.classList.add("active");
 }
 
-changeLng("uk");
+changeLng("en");
