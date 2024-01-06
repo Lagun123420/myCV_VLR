@@ -1,8 +1,7 @@
 i18next.init(
   {
     lng: "uk", // начальный язык
-    debug: true,
-    // debug: false,
+    debug: false,
     resources: {
       en: {
         translation: {
