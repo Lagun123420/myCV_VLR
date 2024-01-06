@@ -9,10 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const wrapperElement = document.querySelector(".main .main-wrapper");
 
-  // wrapperElement.forEach(element => {
-  //   element.classList.add('active');
-  // })
-
   const navbarLinks = {
     1: document.getElementById("link1"),
     2: document.getElementById("link2"),
@@ -33,10 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     wrapperElement.classList.remove("active");
     void wrapperElement.offsetWidth;
     Object.values(slides).forEach((slide, index) => {
-      // Remove 'active' class from all slides
       slide.classList.remove("active");
 
-      // Add 'active' class to the slide that corresponds to the number
       if (index + 1 === number) {
         slide.classList.add("active");
         wrapperElement.classList.add("active");
@@ -54,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMobileMenu();
     });
   });
-
-  // navbarLinks.forEach(())
 
   document.querySelectorAll(".button-toogle").forEach((button) => {
     button.addEventListener("click", function (event) {
