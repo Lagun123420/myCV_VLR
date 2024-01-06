@@ -38,19 +38,31 @@ document.addEventListener("DOMContentLoaded", function () {
     return anim;
   });
 
+  // function setAnimationState() {
+  //   animations.forEach(function (animation, index) {
+  //     var container = animation.container;
+  //     var anim = lottieAnimations[index];
+
+  //     if (container.closest(".slide.active")) {
+  //       if (!anim.isLoaded) anim.loadAnimation();
+  //       anim.play();
+  //     } else {
+  //       anim.stop();
+  //     }
+  //   });
+  // }
   function setAnimationState() {
     animations.forEach(function (animation, index) {
-      var container = animation.container;
-      var anim = lottieAnimations[index];
+        var container = animation.container;
+        var anim = lottieAnimations[index];  // This is already a Lottie animation instance
 
-      if (container.closest(".slide.active")) {
-        if (!anim.isLoaded) anim.loadAnimation();
-        anim.play();
-      } else {
-        anim.stop();
-      }
+        if (container.closest(".slide.active")) {
+            anim.play();  // Play the animation if the slide is active
+        } else {
+            anim.stop();  // Stop otherwise
+        }
     });
-  }
+}
 
   var observer = new MutationObserver(function () {
     setAnimationState();

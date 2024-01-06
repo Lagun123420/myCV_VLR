@@ -75,9 +75,14 @@ body::-webkit-scrollbar-thumb {
 @keyframes headerActive {
   0% {
     right: -130%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
   }
   100% {
     right: 0%;
+    opacity: 1;
   }
 }
 .header {
@@ -100,7 +105,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   right: -130%;
   gap: 20px;
-  animation: headerActive 1200ms ease 500ms 1 normal forwards;
+  animation: headerActive 1200ms ease 100ms 1 normal forwards;
 }
 .header .header-wrapper .logo-container {
   display: flex;
@@ -362,9 +367,14 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes elementActive {
   0% {
+    opacity: 0;
     right: -130%;
   }
+  80% {
+    opacity: 0;
+  }
   100% {
+    opacity: 1;
     right: 0%;
   }
 }
@@ -409,7 +419,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 24px;
 }
 .main .main-wrapper.active {
-  animation: elementActive 1200ms ease-out 900ms 1 normal forwards;
+  animation: elementActive 1200ms ease-out 1 normal forwards;
   overflow-y: hidden;
   overflow-y: hidden;
   padding: 10px 10px 20px;
@@ -458,70 +468,70 @@ body::-webkit-scrollbar-thumb {
   font-size: 14px;
   line-height: 20px;
   opacity: 0;
-  animation: elementShow 600ms ease 2s 1 normal forwards;
+  animation: elementShow 600ms ease 1s 1 normal forwards;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(0) {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(1) {
-  animation-delay: 2.15s;
+  animation-delay: 1.15s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(2) {
-  animation-delay: 2.3s;
+  animation-delay: 1.3s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(3) {
-  animation-delay: 2.45s;
+  animation-delay: 1.45s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(4) {
-  animation-delay: 2.6s;
+  animation-delay: 1.6s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(5) {
-  animation-delay: 2.75s;
+  animation-delay: 1.75s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(6) {
-  animation-delay: 2.9s;
+  animation-delay: 1.9s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(7) {
-  animation-delay: 3.05s;
+  animation-delay: 2.05s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(8) {
-  animation-delay: 3.2s;
+  animation-delay: 2.2s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(9) {
-  animation-delay: 3.35s;
+  animation-delay: 2.35s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(10) {
-  animation-delay: 3.5s;
+  animation-delay: 2.5s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(11) {
-  animation-delay: 3.65s;
+  animation-delay: 2.65s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(12) {
-  animation-delay: 3.8s;
+  animation-delay: 2.8s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(13) {
-  animation-delay: 3.95s;
+  animation-delay: 2.95s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(14) {
-  animation-delay: 4.1s;
+  animation-delay: 3.1s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(15) {
-  animation-delay: 4.25s;
+  animation-delay: 3.25s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(16) {
-  animation-delay: 4.4s;
+  animation-delay: 3.4s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(17) {
-  animation-delay: 4.55s;
+  animation-delay: 3.55s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(18) {
-  animation-delay: 4.7s;
+  animation-delay: 3.7s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(19) {
-  animation-delay: 4.85s;
+  animation-delay: 3.85s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:nth-child(20) {
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper p:not(:last-child) {
   margin-bottom: 15px;
