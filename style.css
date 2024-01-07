@@ -41,7 +41,7 @@ html.fixed {
 .layout {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./sources/background/26543270.webp);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   height: 100%;
   min-height: 100vh;
