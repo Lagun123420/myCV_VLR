@@ -682,11 +682,7 @@ html.fixed {
   opacity: 0;
   display: flex;
   align-items: flex-start;
-  animation: elementShow 600ms ease 3s 1 normal forwards;
-}
-.main .main-wrapper.active .slide.active .container .image-block .animationContainer,
-.main .main-wrapper.active .slide.active .container .image-block .animationContainer1 {
-  width: 40vw;
+  animation: elementShow 600ms ease 1s 1 normal forwards;
 }
 .main .main-wrapper.active .slide.active .container .images-container {
   width: 50%;
@@ -695,10 +691,6 @@ html.fixed {
   align-items: start;
   flex-wrap: wrap;
   margin: 10px;
-}
-.main .main-wrapper.active .slide.active .container .images-container .animationContainer,
-.main .main-wrapper.active .slide.active .container .images-container .animationContainer1 {
-  width: 40vw;
 }
 .main .main-wrapper.active .slide.active .container .images-container .wrapper-images {
   display: flex;
