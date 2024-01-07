@@ -732,12 +732,16 @@ html.fixed {
   padding-top: 0px;
   margin-left: 0px;
   font-weight: 300px;
-  font-size: 0px;
+  font-size: 14px;
+  opacity: 0;
   line-height: 0px;
   color: #5c5c5c;
   max-height: 0;
   overflow: hidden;
   transition: all 300ms ease;
+  padding-top: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper .container-items .item .accordion-text li {
   margin-bottom: 5px;
@@ -746,13 +750,11 @@ html.fixed {
   font-weight: 500 !important;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper .container-items .item .accordion-text.active {
+  opacity: 1;
   height: fit-content;
   font-size: 14px;
   line-height: 20px;
   max-height: 2000px;
-  padding-top: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
 }
 .main .main-wrapper.active .slide.active .container .text-wrapper .contacts {
   display: flex;
