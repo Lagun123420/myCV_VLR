@@ -21,7 +21,7 @@
     <div class="layout">
       <header class="header">
         <div class="header-wrapper">
-          <div class="logo-container">
+          <div class="logo-container" id="homePageActive">
             <div class="logo-image">
               <!-- <img src="./sources/images/logo.webp" alt="logo" /> -->
               <img src="./sources/images/logo2.webp" alt="logo" />
@@ -201,7 +201,7 @@
           </div>
         </div>
         <div class="main-wrapper active">
-          <div class="slide number_1 active" id="#1">
+          <section class="slide number_1 active" id="#1">
             <div class="title-bg">
               <span data-i18n="short_intro"></span>
             </div>
@@ -239,9 +239,9 @@
                 <div id="animationContainer"></div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div class="slide number_2" id="#2">
+          <section class="slide number_2" id="#2">
             <div class="title-bg">
               <span data-i18n="my_hobby"></span>
             </div>
@@ -275,8 +275,8 @@
                 <div id="animationContainer2"></div>
               </div>
             </div>
-          </div>
-          <div class="slide number_3" id="#3">
+          </section>
+          <section class="slide number_3" id="#3">
             <!-- <div class="title-bg" >Professional skills</div> -->
             <div class="title-bg" data-i18n="professional_skills"></div>
             <div class="container">
@@ -369,7 +369,8 @@
                   </div>
                 </div>
               </div>
-              <div class="images-container">
+              <!-- <div class="images-container"> -->
+              <div class="image-block images-container">
                 <div class="wrapper-images">
                   <div class="img">
                     <img src="./sources/icons/tech/JS.webp" alt="js" />
@@ -429,8 +430,8 @@
                 <div id="animationContainer1"></div>
               </div>
             </div>
-          </div>
-          <div class="slide number_4" id="#4">
+          </section>
+          <section class="slide number_4" id="#4">
             <div class="title-bg" data-i18n="commercial_experience"></div>
             <div class="container">
               <div class="text-wrapper">
@@ -524,38 +525,81 @@
                   </div>
                 </div>
               </div>
-              <div class="images-container">
+              <div class="image-block images-container">
                 <div id="animationContainer3"></div>
               </div>
             </div>
-          </div>
-          <div class="slide number_5" id="#5">
+          </section>
+          <section class="slide number_5" id="#5">
             <div class="title-bg" data-i18n="contacts">Contacts</div>
             <div class="container">
               <div class="text-wrapper">
-                <p class="title-bg">Linkedin</p>
-                <p>
-                  <link
-                    href="https://www.linkedin.com/in/vadym-lohinov/"
-                  />Linkedin
-                </p>
-                <p class="title-bg">Github</p>
-                <p>
-                  <link
-                    href="https://github.com/Lagun123420/"
-                  />https://github.com/Lagun123420/
-                </p>
-                <p class="title-bg">Email:</p>
-                <p>Lagun123420@gmail.com</p>
+                <div class="contacts">
+                  <div class="contact-item">
+                    <img src="./sources/icons/github_icon_whitepng.webp" alt="icon">
+                    <div class="text">
+                      <a href="https://github.com/Lagun123420/">Github</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <img src="./sources/icons/linkedin_icon.webp" alt="icon">
+                    <div class="text">
+                      <a href="https://www.linkedin.com/in/vadym-lohinov/">Linkedin</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <img src="./sources/icons/icon-email.webp" alt="icon">
+                    <div class="text">
+                      <a href="mailto:lagun123420@gmail.com">lagun123420@gmail.com</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <img src="./sources/icons/telegram_icon.webp" alt="icon">
+                    <div class="text">
+                      <a href="https://t.me/VLR_Iraclion">@VLR_Iraclion</a></div>
+                  </div>
+                </div>
               </div>
-              <div class="images-container">
+              <div class="image-block images-container">
                 <div id="animationContainer4"></div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="wrapper active">
+          <div class="contacts">
+            <div class="contact-item">
+              <img src="./sources/icons/github_icon_whitepng.webp" alt="icon">
+              <div class="text">
+                <a href="https://github.com/Lagun123420/">Github</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="./sources/icons/linkedin_icon.webp" alt="icon">
+              <div class="text">
+                <a href="https://www.linkedin.com/in/vadym-lohinov/">Linkedin</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="./sources/icons/icon-email.webp" alt="icon">
+              <div class="text">
+                <a href="mailto:lagun123420@gmail.com">lagun123420@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="./sources/icons/telegram_icon.webp" alt="icon">
+              <div class="text">
+                <a href="https://t.me/VLR_Iraclion">@VLR_Iraclion</a></div>
+            </div>
+          </div>
+
+          <div class="copyright">
+            &copy; Vadym Lohinov, &nbsp;<span id="date">2023</span>.
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
   <!-- <script src="./script.js"></script> -->
