@@ -27,24 +27,23 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const homeLogo = {
-    1: document.getElementById('homePageActive')
-  }
+    1: document.getElementById("homePageActive"),
+  };
 
   const openSlide = (number) => {
-    const activeSlide = document.querySelector('.main-wrapper');
+    const activeSlide = document.querySelector(".main-wrapper");
     activeSlide.classList.add("hide");
-    footerElement.classList.add('hide');
+    footerElement.classList.add("hide");
     setTimeout(() => {
       activeSlide.classList.remove("hide");
       wrapperElement.classList.remove("active");
       footerElement.classList.remove("active");
       footerElement.classList.remove("hide");
       void wrapperElement.offsetWidth;
-  
-  
+
       Object.values(slides).forEach((slide, index) => {
         slide.classList.remove("active");
-  
+
         if (index + 1 === number) {
           slide.classList.add("active");
           wrapperElement.classList.add("active");
@@ -102,37 +101,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const closeMobileMenu = () => {
-    document.querySelector('.wrapper-menu').classList.add('hide');
+    document.querySelector(".wrapper-menu").classList.add("hide");
     setTimeout(() => {
-      document.querySelector('html').classList.remove("fixed");
+      document.querySelector("html").classList.remove("fixed");
       document.getElementById("mobile-menu").classList.remove("active");
-      document.querySelector('.wrapper-menu').classList.remove('active');
-      document.querySelector('.wrapper-menu').classList.remove('hide');
+      document.querySelector(".wrapper-menu").classList.remove("active");
+      document.querySelector(".wrapper-menu").classList.remove("hide");
     }, 100);
   };
   const openMobileMenu = () => {
-    document.querySelector('html').classList.add("fixed");
+    document.querySelector("html").classList.add("fixed");
     document.getElementById("mobile-menu").classList.add("active");
-    document.querySelector('.wrapper-menu').classList.add('active');
+    document.querySelector(".wrapper-menu").classList.add("active");
   };
 
-  document.getElementById("button-menu").addEventListener("click", () => {
+  document.getElementById("button-menu").addEventListener("click", (e) => {
+    // console.log(e)
     openMobileMenu();
   });
   document.getElementById("close-mobile-menu").addEventListener("click", () => {
     closeMobileMenu();
   });
-  document.getElementById('mobile-menu').addEventListener('click', (event) => {
+
+  document.getElementById("mobile-menu").addEventListener("click", (event) => {
     if (event.currentTarget === event.target) {
       closeMobileMenu();
     }
   });
 
   // // Date create
-  function todayDate(){
+  function todayDate() {
     var d = new Date();
     var n = d.getFullYear() + "  ";
-    return document.getElementById("date").innerHTML = n;
+    return (document.getElementById("date").innerHTML = n);
   }
   todayDate();
 });
